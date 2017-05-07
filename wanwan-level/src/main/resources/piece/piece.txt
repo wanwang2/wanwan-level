@@ -1,0 +1,8 @@
+query.1:
+	string.key	->list?
+query.2:
+	int.key		->list?
+query.3:
+	object,list
+		.string?query.1
+		.int?query.2
