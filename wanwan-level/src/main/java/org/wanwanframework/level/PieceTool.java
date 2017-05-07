@@ -1,8 +1,10 @@
 package org.wanwanframework.level;
 
-public class PieceUtil {
+public class PieceTool {
 
 	public static void translate() {
 		
 	}
+	
+	
 }
