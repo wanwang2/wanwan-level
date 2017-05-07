@@ -4,5 +4,5 @@ query.2:
 	int.key		->list?
 query.3:
 	object,list
-		.string?query.1
-		.int?query.2
+		as string?query.1
+		as int?query.2
