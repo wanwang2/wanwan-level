@@ -1,8 +1,8 @@
 query.1:
-	string.key	->list?
+	string.key	->list?;
 query.2:
-	int.key		->list?
+	int.key		->list?;
 query.3:
 	object,list
 		as string?query.1
-		as int?query.2
+		as int?query.2;
