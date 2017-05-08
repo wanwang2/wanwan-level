@@ -2,7 +2,8 @@ package org.wanwanframework.level.util;
 
 public class ParseUtil {
 
-	public static final String[] A = "ABCDEFGHIGKLMNOPQRSTUVWXYZ".split("");
+	public static final String Char = "ABCDEFGHIGKLMNOPQRSTUVWXYZ";
+	public static final String[] A = Char.split("");
 	
 	public static String point(int index) {
 		int i = index - 1;
@@ -12,11 +13,27 @@ public class ParseUtil {
 	}
 	
 	public static String point(Integer index) {
-		return Integer.toString(index, 26);
+		String[] num = Integer.toString(index, A.length).split("");
+		String content = "";
+		String bit;
+		for (int i = 0; i < num.length; i++) {
+			bit = num[i];
+			int start = Char.indexOf(bit.toUpperCase());
+			if(start > -1) {
+				content += A[start + 9];
+			} else {
+				content += A[Integer.parseInt(num[i]) - 1]; 
+			}
+		}
+		return content;
 	}
 	
 	public static void main(String[] args) {
-		point(100);
-		point(new Integer(27));
+		//String s = point(1000);
+		//System.out.println("s:" + s);
+		String rr = point(new Integer(27));
+		System.out.println("rr:" + rr);
+		String rrr = point(new Integer(1000));
+		System.out.println("rr:" + rrr);
 	}
 }
