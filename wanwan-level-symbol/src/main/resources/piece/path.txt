@@ -1,0 +1,2 @@
+./src/main/resources/piece/piece.txt;
+./src/main/resources/piece/template.txt;

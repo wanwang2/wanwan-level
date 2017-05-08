@@ -1,0 +1,2 @@
+query:
+	string.key	->list?;

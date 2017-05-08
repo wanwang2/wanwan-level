@@ -1,0 +1,9 @@
+->:
+	for(@It it - @list) {
+		if(@key.euqal(@it)) {
+			return @?
+		}
+	}
+	return @null;
+as:
+	!;
