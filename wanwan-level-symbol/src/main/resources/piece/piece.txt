@@ -1,2 +1,2 @@
 query:
-	string.key	->list?;
+	string.key -> list?;

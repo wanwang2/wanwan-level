@@ -1,5 +1,5 @@
 ->:
-	for(@It it - @list) {
+	for(@It @it - @list) {
 		if(@key.euqal(@it)) {
 			return @?
 		}
